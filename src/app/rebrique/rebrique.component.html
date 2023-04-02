@@ -1,0 +1,74 @@
+<main>
+    <div class="container-fluid">
+      <div class="row justify-content-center pt-2">
+        <div class="text-center col">
+         
+            <hr>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center p-2">
+        <div class="col-12 col-sm-12 col-md-6 col-lg- col-xl-6">
+          <div class="card">
+            <div class="card-header text-center">
+              <h4><span class="text-primary font-weight-bold">Rebrique</span></h4>
+            </div>
+            <div class="card-body">
+<form [formGroup]="rebriquefm" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Code</mat-label>
+            <input matInput type="text" placeholder="Ex. R1" formControlName="code">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>libellé</mat-label>
+            <input matInput placeholder="Ex. SalaireBrut" formControlName="libelle">
+        </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Formule</mat-label>
+            <input matInput type="text" placeholder="Ex. R1*50/100" formControlName="formule">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Base de calcul</mat-label>
+            <input matInput placeholder="Ex. 3000" formControlName="basecalcul">
+        </mat-form-field>
+    </div>
+  </div>
+
+
+  <mat-form-field appearance="fill">
+    <mat-label>Type</mat-label>
+    <mat-select  formControlName="type">
+      <mat-option value="Salaire">Salaire</mat-option>
+      <mat-option value="Cotisation">Cotisation</mat-option>
+      <mat-option value="Indemnité">Indemnité</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="row">
+    
+    <mat-form-field appearance="outline">
+      
+        <mat-label>Date Effet</mat-label>
+       <span> <input matInput type="text" placeholder="Ex. JJ/MM/YYYY" formControlName="deff"  ><i class="fa-solid fa-calendar-days" style="color: #88a9dd;"></i></span> 
+
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Date Fin</mat-label>
+        <input matInput placeholder="Ex. JJ/MM/YYYY" formControlName="df"> <i class="fa-solid fa-calendar-days" style="color: #88a9dd;"></i>
+    </mat-form-field>
+</div>
+
+        <div mat-dialog-actions class="action">
+          <button mat-raised-button type="button" [mat-dialog-close]="false" (click)="resetForm()">Annuler</button>
+          <button mat-raised-button color="primary" type="submit">Créer</button>
+      </div>   
+</form>   
+            </div></div></div></div></div></main>
+
+   
+      

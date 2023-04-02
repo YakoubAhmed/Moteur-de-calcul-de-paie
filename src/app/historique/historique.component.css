@@ -1,0 +1,21 @@
+h3 {
+    font-size: 1.5em; /* taille de police */
+    font-weight: bold; /* épaisseur de police */
+    color: darkblue; /* couleur du texte */
+    margin-top: 1em; /* marge en haut de la balise */
+    margin-bottom: 0.5em; /* marge en bas de la balise */
+    text-align: center;
+    box-shadow: 2px 2px 5px darkgray;
+    border: 3px solid gray;
+    
+
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    fill: red;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+  }

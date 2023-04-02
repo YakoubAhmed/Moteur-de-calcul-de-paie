@@ -1,0 +1,9 @@
+{
+    "rebrique": [ {
+        "code": "R1",
+
+    "libelle": "salaire brut",
+    "formule": 1.45,
+    "date effet": 12 
+    }
+    ] }

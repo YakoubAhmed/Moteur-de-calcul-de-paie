@@ -1,0 +1,117 @@
+<h3>Assiette</h3>
+<main>
+  <div class="container-fluid">
+    <div class="row justify-content-center pt-2">
+      <div class="text-center col">
+       
+          <hr>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center p-2">
+      <div class="col-12 col-sm-12 col-md-6 col-lg- col-xl-6">
+        <div class="card">
+          <div class="card-header text-center">
+            <h4><span class="text-primary font-weight-bold">Historique Assiette</span></h4>
+          </div>
+          <div class="card-body">
+<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Code</th>
+        <th scope="col">Libellé</th>
+        <th scope="col">Formule</th>
+        <th scope="col">Base De calcul</th>
+
+        <th scope="col">Date Effet</th>
+        <th scope="col">Date Fin</th>
+        <th scope="col">action</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data2"> 
+        <td scope="row">{{i.code}}</td>
+        <td>{{i.libelle}}</td>
+        <td>{{i.formule}}</td>
+        <td >{{i.basecalcul}}</td>
+
+        <td >{{i.deff}}</td>
+        <td >{{i.df}}</td>
+        <td>
+          <button > <img src="./assets/update.png" alt="My Icon">              
+          </button>
+          <button > <img src="./assets/trash.png" alt="My Icon">              
+          </button>
+         
+        </td>
+
+
+        
+      </tr>
+    
+    </tbody>
+  </table>  
+  </div></div></div></div></div></main>
+
+
+  
+
+   <h3>Rebrique</h3>
+
+<main>
+    <div class="container-fluid">
+      <div class="row justify-content-center pt-2">
+        <div class="text-center col">
+         
+            <hr>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center p-2">
+        <div class="col-12 col-sm-12 col-md-6 col-lg- col-xl-6">
+          <div class="card">
+            <div class="card-header text-center">
+              <h4><span class="text-primary font-weight-bold">Historique Rebrique</span></h4>
+            </div>
+            <div class="card-body">
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Code</th>
+                    <th scope="col">Libellé</th>
+                    <th scope="col">Formule</th>
+                    <th scope="col">Type</th>
+
+                    <th scope="col">Date Effet</th>
+                    <th scope="col">Date Fin</th>
+                    <th scope="col">action</th>
+            
+            
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data"> 
+                    <td scope="row">{{i.code}}</td>
+                    <td>{{i.libelle}}</td>
+                    <td>{{i.formule}}</td>
+                    <td >{{i.type}}</td>
+
+                    <td >{{i.deff}}</td>
+                    <td >{{i.df}}</td>
+                    <td>
+                      <button > <img src="./assets/update.png" alt="My Icon">              
+                      </button>
+                      <button > <img src="./assets/trash.png" alt="My Icon">              
+                      </button>
+                     
+                    </td>
+            
+            
+                    
+                  </tr>
+                
+                </tbody>
+  </table>
+  </div></div></div></div></div></main>
